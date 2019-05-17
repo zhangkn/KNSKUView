@@ -242,8 +242,8 @@ _collectionView.showsHorizontalScrollIndicator = NO;
  
  */
 - (NSArray *)filter:(KNSKUDataFilter *)filter propertiesInSection:(NSInteger)section {
-        return _dataSource[section][@"value"];// testdata
-//    return _dataSource[section][@"PVID"];
+//        return _dataSource[section][@"value"];// testdata
+    return _dataSource[section][@"PVID"];
     
     
 }
@@ -315,12 +315,11 @@ _collectionView.showsHorizontalScrollIndicator = NO;
     
     
     
-//    [self setupSKUData];//， 直接进行数据格式更换
+    [self setupSKUData];//， 直接进行数据格式更换
     
     
-    //test data
     
-        [self testData];
+//        [self testData];
     NSLog(@"dataSource%@",_dataSource);
     NSLog(@"_skuData:%@",_skuData);
     
@@ -330,7 +329,121 @@ _collectionView.showsHorizontalScrollIndicator = NO;
     
 }
 
+/**
+ contition 是由属性ID组成
+ 2019-05-17 10:14:07.247397+0800 retail[6665:856110] dataSource(
+ {
+ PVID =         (
+ 219,
+ 220
+ );
+ name = "\U7cfb\U7edf\U989c\U8272";
+ value =         (
+ "\U7ea2\U8272",
+ "\U73ab\U7ea2\U8272"
+ );
+ },
+ {
+ PVID =         (
+ 325,
+ 326
+ );
+ name = "\U5c3a\U7801";
+ value =         (
+ S,
+ M
+ );
+ }
+ )
+ 2019-05-17 10:14:07.247685+0800 retail[6665:856110] _skuData:(
+ {
+ Title = "\U7ea2\U8272_S";
+ contition = "219,325";
+ price = "11.00";
+ store = 12;
+ },
+ {
+ Title = "\U7ea2\U8272_M";
+ contition = "219,326";
+ price = "22.00";
+ store = 12;
+ },
+ {
+ Title = "\U73ab\U7ea2\U8272_S";
+ contition = "220,325";
+ price = "33.00";
+ store = 12;
+ }
+ )
+ (lldb) po [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:_dataSource options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding]
+ - (NSArray *)filter:(KNSKUDataFilter *)filter propertiesInSection:(NSInteger)section {
+ return _dataSource[section][@"PVID"];
+ #warning filter:propertiesInSection：和方法filter:conditionForRow：数据类型应该保持一致  这里不关心具体的值，可以是属性ID, 属性名，字典、model
 
+ */
+- (void)setupSKUData{
+    
+    NSArray *dataSource= @[
+                          @{
+                              @"name" : @"系统颜色",
+                              @"value" : @[
+                                         @"红色",
+                                         @"玫红色"
+                                         ],
+                              @"PVID" : @[
+                                        @"219",
+                                        @"220"
+                                        ]
+                          },
+                          @{
+                              @"name" : @"尺码",
+                              @"value" : @[
+                                         @"S",
+                                         @"M"
+                                         ],
+                              @"PVID" : @[
+                                       @"325",
+                                        @"326"
+                                        ]
+                          }
+                          ];
+
+    
+    _dataSource = dataSource;
+    
+    _selectedIndexPaths = [NSMutableArray array];
+    
+    _skuData = @[
+                @{
+                    @"store" : @"12",
+                    @"contition" : @"219,325",
+                    @"Title" : @"红色_S",
+                    @"price" : @"11.00"
+                },
+                @{
+                    @"store" : @"12",
+                    @"contition" : @"219,326",
+                    @"Title" : @"红色_M",
+                    @"price" : @"22.00"
+                },
+               @{
+                    @"store" : @"12",
+                    @"contition" : @"220,325",
+                    @"Title" : @"玫红色_S",
+                    @"price" : @"33.00"
+                }
+                ];
+    
+
+}
+
+/**
+ contition 是由属性名组成
+ #warning filter:propertiesInSection：和方法filter:conditionForRow：数据类型应该保持一致  这里不关心具体的值，可以是属性ID, 属性名，字典、model
+
+ - (NSArray *)filter:(KNSKUDataFilter *)filter propertiesInSection:(NSInteger)section {
+ //        return _dataSource[section][@"value"];// testdata
+ */
 - (void)testData{
     
     
