@@ -29,7 +29,7 @@
 
 - (KNSpecificationView *)specificationV{
     if (!_specificationV) {
-        _specificationV = [[KNSpecificationView alloc]initWithFrame:CGRectMake(40, 0, SCREENW, kAdjustRatio(400))];
+        _specificationV = [[KNSpecificationView alloc]initWithFrame:CGRectMake(0, 40, SCREENW, kAdjustRatio(400))];
         
         [self.view addSubview:_specificationV];
         
