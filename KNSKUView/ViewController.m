@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "KNSpecificationView.h"
 
 @interface ViewController ()
-
+@property (strong, nonatomic) KNSpecificationView *specificationV;
 @end
 
 @implementation ViewController
@@ -17,6 +18,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self.specificationV setupData];
+    
+    
+    
+    
+}
+
+
+- (KNSpecificationView *)specificationV{
+    if (!_specificationV) {
+        _specificationV = [[KNSpecificationView alloc]initWithFrame:CGRectMake(40, 0, SCREENW, kAdjustRatio(400))];
+        
+        [self.view addSubview:_specificationV];
+        
+        
+    }
+    return _specificationV;
 }
 
 

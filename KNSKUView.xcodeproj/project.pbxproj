@@ -15,6 +15,15 @@
 		046EE46C228E42BB00124182 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 046EE46B228E42BB00124182 /* main.m */; };
 		046EE476228E42BB00124182 /* KNSKUViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 046EE475228E42BB00124182 /* KNSKUViewTests.m */; };
 		046EE481228E42BB00124182 /* KNSKUViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 046EE480228E42BB00124182 /* KNSKUViewUITests.m */; };
+		046EE491228E439A00124182 /* KNSKUDataFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 046EE490228E439A00124182 /* KNSKUDataFilter.m */; };
+		046EE494228E45FA00124182 /* KNSKUProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 046EE493228E45FA00124182 /* KNSKUProperty.m */; };
+		046EE497228E465D00124182 /* KNSKUCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 046EE496228E465D00124182 /* KNSKUCondition.m */; };
+		046EE49B228E496600124182 /* KNSpecificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046EE49A228E496600124182 /* KNSpecificationView.m */; };
+		046EE4A1228E4A9400124182 /* QCTPropertyCellCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 046EE49F228E4A9400124182 /* QCTPropertyCellCollectionViewCell.m */; };
+		046EE4A2228E4A9400124182 /* QCTPropertyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 046EE4A0228E4A9400124182 /* QCTPropertyHeader.m */; };
+		04873FA3228E4BFB00D09D9A /* KNConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 04873FA2228E4BFB00D09D9A /* KNConsts.m */; };
+		04873FA6228E4D5A00D09D9A /* KN_Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 04873FA5228E4D5A00D09D9A /* KN_Common.m */; };
+		F280D797346946B4712FAEAC /* libPods-KNSKUView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10DFE05C38F803358D3B21B0 /* libPods-KNSKUView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +60,25 @@
 		046EE47C228E42BB00124182 /* KNSKUViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KNSKUViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		046EE480228E42BB00124182 /* KNSKUViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNSKUViewUITests.m; sourceTree = "<group>"; };
 		046EE482228E42BB00124182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046EE48F228E439A00124182 /* KNSKUDataFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KNSKUDataFilter.h; sourceTree = "<group>"; };
+		046EE490228E439A00124182 /* KNSKUDataFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNSKUDataFilter.m; sourceTree = "<group>"; };
+		046EE492228E45FA00124182 /* KNSKUProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KNSKUProperty.h; sourceTree = "<group>"; };
+		046EE493228E45FA00124182 /* KNSKUProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNSKUProperty.m; sourceTree = "<group>"; };
+		046EE495228E465D00124182 /* KNSKUCondition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KNSKUCondition.h; sourceTree = "<group>"; };
+		046EE496228E465D00124182 /* KNSKUCondition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNSKUCondition.m; sourceTree = "<group>"; };
+		046EE499228E496600124182 /* KNSpecificationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KNSpecificationView.h; sourceTree = "<group>"; };
+		046EE49A228E496600124182 /* KNSpecificationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNSpecificationView.m; sourceTree = "<group>"; };
+		046EE49D228E4A9400124182 /* QCTPropertyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCTPropertyHeader.h; sourceTree = "<group>"; };
+		046EE49E228E4A9400124182 /* QCTPropertyCellCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCTPropertyCellCollectionViewCell.h; sourceTree = "<group>"; };
+		046EE49F228E4A9400124182 /* QCTPropertyCellCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCTPropertyCellCollectionViewCell.m; sourceTree = "<group>"; };
+		046EE4A0228E4A9400124182 /* QCTPropertyHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCTPropertyHeader.m; sourceTree = "<group>"; };
+		04873FA1228E4BFB00D09D9A /* KNConsts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KNConsts.h; sourceTree = "<group>"; };
+		04873FA2228E4BFB00D09D9A /* KNConsts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNConsts.m; sourceTree = "<group>"; };
+		04873FA4228E4D5A00D09D9A /* KN_Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KN_Common.h; sourceTree = "<group>"; };
+		04873FA5228E4D5A00D09D9A /* KN_Common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KN_Common.m; sourceTree = "<group>"; };
+		10DFE05C38F803358D3B21B0 /* libPods-KNSKUView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KNSKUView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1883305DEC8D65816D985AEB /* Pods-KNSKUView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KNSKUView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KNSKUView/Pods-KNSKUView.debug.xcconfig"; sourceTree = "<group>"; };
+		D3831A2B2BDD1036EBFB3528 /* Pods-KNSKUView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KNSKUView.release.xcconfig"; path = "Pods/Target Support Files/Pods-KNSKUView/Pods-KNSKUView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F280D797346946B4712FAEAC /* libPods-KNSKUView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,8 +112,9 @@
 			children = (
 				046EE45B228E42B700124182 /* KNSKUView */,
 				046EE474228E42BB00124182 /* KNSKUViewTests */,
-				046EE47F228E42BB00124182 /* KNSKUViewUITests */,
 				046EE45A228E42B700124182 /* Products */,
+				56F076935D7C9B7FE22B0CDA /* Pods */,
+				7D33AEEEFD170EFE414EC1C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,15 +131,22 @@
 		046EE45B228E42B700124182 /* KNSKUView */ = {
 			isa = PBXGroup;
 			children = (
+				046EE498228E494F00124182 /* SpecificationView */,
+				046EE48E228E436500124182 /* SKUDataFilter */,
 				046EE45C228E42B700124182 /* AppDelegate.h */,
 				046EE45D228E42B700124182 /* AppDelegate.m */,
 				046EE45F228E42B700124182 /* ViewController.h */,
 				046EE460228E42B700124182 /* ViewController.m */,
 				046EE462228E42B700124182 /* Main.storyboard */,
+				046EE47F228E42BB00124182 /* KNSKUViewUITests */,
 				046EE465228E42BB00124182 /* Assets.xcassets */,
 				046EE467228E42BB00124182 /* LaunchScreen.storyboard */,
 				046EE46A228E42BB00124182 /* Info.plist */,
 				046EE46B228E42BB00124182 /* main.m */,
+				04873FA1228E4BFB00D09D9A /* KNConsts.h */,
+				04873FA4228E4D5A00D09D9A /* KN_Common.h */,
+				04873FA5228E4D5A00D09D9A /* KN_Common.m */,
+				04873FA2228E4BFB00D09D9A /* KNConsts.m */,
 			);
 			path = KNSKUView;
 			sourceTree = "<group>";
@@ -132,6 +169,57 @@
 			path = KNSKUViewUITests;
 			sourceTree = "<group>";
 		};
+		046EE48E228E436500124182 /* SKUDataFilter */ = {
+			isa = PBXGroup;
+			children = (
+				046EE48F228E439A00124182 /* KNSKUDataFilter.h */,
+				046EE495228E465D00124182 /* KNSKUCondition.h */,
+				046EE496228E465D00124182 /* KNSKUCondition.m */,
+				046EE492228E45FA00124182 /* KNSKUProperty.h */,
+				046EE493228E45FA00124182 /* KNSKUProperty.m */,
+				046EE490228E439A00124182 /* KNSKUDataFilter.m */,
+			);
+			path = SKUDataFilter;
+			sourceTree = "<group>";
+		};
+		046EE498228E494F00124182 /* SpecificationView */ = {
+			isa = PBXGroup;
+			children = (
+				046EE49C228E4A9400124182 /* PropertyCell */,
+				046EE499228E496600124182 /* KNSpecificationView.h */,
+				046EE49A228E496600124182 /* KNSpecificationView.m */,
+			);
+			path = SpecificationView;
+			sourceTree = "<group>";
+		};
+		046EE49C228E4A9400124182 /* PropertyCell */ = {
+			isa = PBXGroup;
+			children = (
+				046EE49D228E4A9400124182 /* QCTPropertyHeader.h */,
+				046EE49E228E4A9400124182 /* QCTPropertyCellCollectionViewCell.h */,
+				046EE49F228E4A9400124182 /* QCTPropertyCellCollectionViewCell.m */,
+				046EE4A0228E4A9400124182 /* QCTPropertyHeader.m */,
+			);
+			path = PropertyCell;
+			sourceTree = "<group>";
+		};
+		56F076935D7C9B7FE22B0CDA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1883305DEC8D65816D985AEB /* Pods-KNSKUView.debug.xcconfig */,
+				D3831A2B2BDD1036EBFB3528 /* Pods-KNSKUView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7D33AEEEFD170EFE414EC1C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10DFE05C38F803358D3B21B0 /* libPods-KNSKUView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +227,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 046EE485228E42BB00124182 /* Build configuration list for PBXNativeTarget "KNSKUView" */;
 			buildPhases = (
+				86C3C54E4623C2AFAA277435 /* [CP] Check Pods Manifest.lock */,
 				046EE455228E42B700124182 /* Sources */,
 				046EE456228E42B700124182 /* Frameworks */,
 				046EE457228E42B700124182 /* Resources */,
@@ -257,13 +346,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		86C3C54E4623C2AFAA277435 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KNSKUView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		046EE455228E42B700124182 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046EE491228E439A00124182 /* KNSKUDataFilter.m in Sources */,
+				046EE49B228E496600124182 /* KNSpecificationView.m in Sources */,
+				046EE4A1228E4A9400124182 /* QCTPropertyCellCollectionViewCell.m in Sources */,
+				046EE494228E45FA00124182 /* KNSKUProperty.m in Sources */,
+				046EE4A2228E4A9400124182 /* QCTPropertyHeader.m in Sources */,
 				046EE461228E42B700124182 /* ViewController.m in Sources */,
 				046EE46C228E42BB00124182 /* main.m in Sources */,
+				04873FA6228E4D5A00D09D9A /* KN_Common.m in Sources */,
+				046EE497228E465D00124182 /* KNSKUCondition.m in Sources */,
+				04873FA3228E4BFB00D09D9A /* KNConsts.m in Sources */,
 				046EE45E228E42B700124182 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +555,7 @@
 		};
 		046EE486228E42BB00124182 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1883305DEC8D65816D985AEB /* Pods-KNSKUView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +573,7 @@
 		};
 		046EE487228E42BB00124182 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3831A2B2BDD1036EBFB3528 /* Pods-KNSKUView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
